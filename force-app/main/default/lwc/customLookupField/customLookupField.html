@@ -1,0 +1,21 @@
+<template>
+    <lightning-card
+        title="Account"
+        icon-name="standard:first_non_empty"
+        size="large"
+        margin-left="8px"
+        margin-right="8px"
+    >
+    <div class="fields" 
+    style="margin-left:13px;
+    margin-right:13px">
+          <lightning-record-form
+            object-api-name={objectApiName}
+            record-id={recordId}
+            fields={fields}
+            mode="view"
+            columns="2"
+            onsuccess={handleSuccess}>
+          </lightning-record-form></div>
+    </lightning-card>
+</template>
